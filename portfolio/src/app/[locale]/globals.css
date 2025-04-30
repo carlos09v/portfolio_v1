@@ -1,0 +1,159 @@
+@import "tailwindcss";
+@import 'keen-slider/keen-slider.min.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* A partir do Tailwind v4.0 */
+
+@theme {
+  /* --color-*: initial; // Apenas as cores criadas/definidas e não as do tailwind */
+
+  /* Cores e Fontes do Figma */
+  --color-green-primary: #0EE557;
+  --color-purple-secundary: #7A0EE6;
+  --color-orange-tertiary: #E68F0E;
+
+  /* Gradientes */
+  --gradient-bg-dark: linear-gradient(348.163deg,
+      #007400ff 0%,
+      #393939cc 100%);
+
+  --gradient-purple: linear-gradient(180deg, #443723 0%, #7a0ee6b3 100%);
+  --gradient-orange: linear-gradient(180deg, #e68f0e 0%, #7a0ee6b3 100%);
+  --gradient-orange-full: linear-gradient(180deg, #e68f0eb3 0%, #793b00ff 100%);
+
+
+
+  /* == Primárias == */
+  --color-green-50: #95ffa0ff;
+  --color-green-100: #6ff882ff;
+  --color-green-200: #46e265ff;
+  --color-green-300: #00cc4aff;
+  --color-green-400: #00b630ff;
+  --color-green-500: #00a013ff;
+  --color-green-600: #008a00ff;
+  --color-green-700: #007400ff;
+  --color-green-800: #005e00ff;
+  --color-green-900: #004900ff;
+
+  /* == Secundárias == */
+  --color-purple-50: #ffcfffff;
+  --color-purple-100: #ffb4ffff;
+  --color-purple-200: #f89affff;
+  --color-purple-300: #e180ffff;
+  --color-purple-400: #c967ffff;
+  --color-purple-500: #b14fffff;
+  --color-purple-600: #9838ffff;
+  --color-purple-700: #8021e4ff;
+  --color-purple-800: #6707c5ff;
+  --color-purple-900: #4f00a3ff;
+
+  /* == Terciárias == */
+  --color-orange-50: #ffe48eff;
+  --color-orange-100: #ffcc6dff;
+  --color-orange-200: #ffb44fff;
+  --color-orange-300: #f39e30ff;
+  --color-orange-400: #db880cff;
+  --color-orange-500: #c37300ff;
+  --color-orange-600: #ab6000ff;
+  --color-orange-700: #924d00ff;
+  --color-orange-800: #793b00ff;
+  --color-orange-900: #612a00ff;
+
+  /* Neutros - Brown */
+  --color-brown-50: #fff1d9ff;
+  --color-brown-100: #eedac0ff;
+  --color-brown-200: #d8c3a8ff;
+  --color-brown-300: #c2ae91ff;
+  --color-brown-400: #ad987bff;
+  --color-brown-500: #978367ff;
+  --color-brown-600: #826f54ff;
+  --color-brown-700: #6d5c42ff;
+  --color-brown-800: #594931ff;
+  --color-brown-900: #443723ff;
+  --color-brown-special: #665439ff;
+
+  /* == Neutras - Black == */
+  --color-gray-50: #F3F3F3;
+  --color-gray-100: #ddddddff;
+  --color-gray-200: #c6c6c6ff;
+  --color-gray-300: #b0b0b0ff;
+  --color-gray-400: #9b9b9bff;
+  --color-gray-500: #868686ff;
+  --color-gray-600: #727272ff;
+  --color-gray-700: #5e5e5eff;
+  --color-gray-800: #4b4b4bff;
+  --color-gray-900: #393939ff;
+
+}
+
+/* Reutilizar variaveis feitas no Layout pelo next/font */
+@theme inline {
+  /* Monospace */
+  --font-code: var(--font-fira-code);
+
+  /* Sem serifa (boa pra leitura) */
+  --font-sans: var(--font-poppins);
+}
+
+:root {
+  --background: #D1E9D4;
+
+  /* Cor do texto (ou ícones, bordas, etc) que ficam em cima do fundo */
+  --foreground: var(--color-black);
+  scroll-behavior: smooth; /* Mover suavemente ao clicar no nav */
+}
+
+
+/* == Não precisa pois o next-themes ja verifica
+@media(prefers-color-scheme: dark) {
+
+}
+*/
+
+.dark {
+  --background: var(--gradient-bg-dark) no-repeat center center fixed;
+  --foreground: var(--color-gray-50);
+}
+
+/* O tailwind não tem border-image pra definir as gradientes */
+.dark .gradient-orange-border {
+  border: 1px dashed;
+  border-image: var(--gradient-orange) 1;
+  border-image-slice: 1;
+}
+
+.dark .gradient-orange-border-card {
+  border: 1px dashed transparent;
+  background-image: var(--gradient-orange);
+  background-origin: border-box;
+  background-clip: border-box;
+  border-radius: 1rem;
+}
+
+.dark .gradient-purple-border {
+  border-left: 4px solid;
+  border-right: 4px solid;
+  border-image: var(--gradient-purple) 1 / 1 / 0 stretch;
+}
+
+.title {
+  font-size: 2.25rem; /* Tailwind text-4xl */
+  width: fit-content;
+  font-weight: bold;
+  padding-bottom: 0.5rem; /* Tailwind pb-2 */
+  
+  border-bottom-width: 1px;
+  border-bottom-left-radius: 0.5rem; /* Tailwind rounded-b-2xl */
+  border-bottom-right-radius: 0.5rem;
+}
+
+.dark .title {
+  text-shadow: 1px 0px 4px #E68F0E;
+  border-bottom-color: var(--color-orange-tertiary);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}

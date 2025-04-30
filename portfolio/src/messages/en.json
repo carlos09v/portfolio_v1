@@ -1,0 +1,63 @@
+{
+  "Header": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "about": "About me",
+    "contact": "Contact Me"
+  },
+  "MainContent": {
+    "dev_button": "fullstack developer",
+    "ghost_button": "Looking for Job",
+    "title": "Hello, welcome! 👋",
+    "message": "This is my portfolio, where I share my projects, my skills, and a bit of my passion for technology. (Better in dark mode 🌙)",
+    "card_info": {
+      "1": "Completed\nProjects",
+      "2": "Client\nSatisfaction",
+      "3": "Years of\nExperience"
+    }
+  },
+  "Services": {
+    "title": "My Services 💼",
+    "card_info": [
+      {
+        "title": "Website Development",
+        "description": "💬 Development of modern web applications focused on performance, security, and scalability."
+      },
+      {
+        "title": "Web Design",
+        "description": "💬 I design user-friendly interfaces with Figma, focusing on UI/UX, accessibility, and responsiveness."
+      },
+      {
+        "title": "DevOps & Deploy",
+        "description": "💬 I handle CI/CD, automated builds, and deploys using Vercel, Netlify, and Docker with version control best practices."
+      }
+    ]
+  },
+  "Portfolio": {
+    "title": "My Projects 🚀",
+    "button": "See Live",
+    "titleCode": "Code"
+  },
+  "Skills": {
+    "title": "My Skills 🛠️"
+  },
+  "AboutMe": {
+    "title": "About me 👨‍💻",
+    "message": "Hi there! My name is Carlos Vinicius — I’m a Full Stack Developer and Designer passionate about building modern and intuitive digital experiences.\nI hold a degree in Systems Analysis and Development, and I'm currently pursuing a postgraduate program in Artificial Intelligence. My work blends code and creativity, allowing me to design and develop scalable solutions that are both functional and visually engaging."
+  },
+  "ContactMe": {
+    "question": "Do you have a project to discuss?",
+    "contact": "Contact:",
+    "form": {
+      "title": "> Send your message:",
+      "placeholder_1": "Enter your username",
+      "placeholder_2": "Enter your email",
+      "placeholder_3": "Enter your message",
+      "button": "Send"
+    }
+  },
+  "Footer": {
+    "footer": "© 2025 Carlos Vinicius. All rights reserved."
+  }
+}

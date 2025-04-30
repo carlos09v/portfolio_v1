@@ -1,0 +1,63 @@
+{
+  "Header": {
+    "home": "Entrada",
+    "portfolio": "Portfólio",
+    "services": "Serviços",
+    "about": "Sobre Mim",
+    "contact": "Contato"
+  },
+  "MainContent": {
+    "dev_button": "Desenvolvedor Fullstack",
+    "ghost_button": "Disponível",
+    "title": "Olá, seja bem-vindo! 👋",
+    "message": "Este é o meu portfólio, onde compartilho meus projetos, minhas habilidades e um pouco da minha paixão por tecnologia. (Melhor em modo escuro 🌙)",
+    "card_info": {
+      "1": "Projetos\nCompletados",
+      "2": "Satisfação\ndo Cliente",
+      "3": "Anos de\nExperiência"
+    }
+  },
+  "Services": {
+    "title": "Meus Serviços 💼",
+    "card_info": [
+      {
+        "title": "Desenvolvimento Web",
+        "description": "💬 Desenvolvimento de aplicações web modernas com foco em performance, segurança e escalabilidade."
+      },
+      {
+        "title": "Design Web",
+        "description": "💬 Crio interfaces amigáveis no Figma, com foco em UI/UX, acessibilidade e responsividade."
+      },
+      {
+        "title": "DevOps & Deploy",
+        "description": "💬 Gerencio CI/CD, builds automatizados e deploys utilizando Vercel, Netlify e Docker, seguindo as melhores práticas de controle de versão."
+      }
+    ]
+  },
+  "Portfolio": {
+    "title": "Meus Projetos 🚀",
+    "button": "Ver Site",
+    "titleCode": "Código"
+  },
+  "Skills": {
+    "title": "Habilidades 🛠️"
+  },
+  "AboutMe": {
+    "title": "Sobre mim 👨‍💻",
+    "message": "Olá! Meu nome é Carlos Vinicius — sou Desenvolvedor Full Stack e Designer, apaixonado por criar experiências digitais modernas e intuitivas.\nSou formado em Análise e Desenvolvimento de Sistemas e, atualmente, estou cursando uma pós-graduação em Inteligência Artificial. Meu trabalho une código e criatividade, permitindo que eu projete e desenvolva soluções escaláveis e funcionais."
+  },
+  "ContactMe": {
+    "question": "Você tem um projeto que queira discutir?",
+    "contact": "Contato:",
+    "form": {
+      "title": "> Envie sua mensagem:",
+      "placeholder_1": "insira seu nome",
+      "placeholder_2": "insira seu email",
+      "placeholder_3": "insira sua mensagem",
+      "button": "Enviar"
+    }
+  },
+  "Footer": {
+    "footer": "© 2025 Carlos Vinicius. Todos os direitos reservados."
+  }
+}
