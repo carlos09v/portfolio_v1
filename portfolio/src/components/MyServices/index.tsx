@@ -1,9 +1,7 @@
 import { useMessages, useTranslations } from "next-intl";
 import { CardService } from "./CardService"
-import { IoRocketOutline } from "react-icons/io5";
 import { FaCode, FaPaintBrush, FaServer } from "react-icons/fa";
-
-
+import Image from "next/image"
 
 
 export const MyServices = () => {
@@ -15,13 +13,28 @@ export const MyServices = () => {
   }[]
 
   return (
-    <div id="services" className="mt-8 ml-20 mr-20 relative scroll-mt-32">
-      <h1 className="dark:border-b-orange-tertiary title font-sans relative z-[1]">
+    <div id="services" className="mt-12 md:mx-20 mx-12 relative scroll-mt-32 min-h-[570px]">
+      <Image
+        src="/assets/LeonardAI/Flux_Dev_2.png"
+        alt="Flux Dev"
+        width={180}
+        height={200}
+        className="object-contain absolute bottom-0 hidden md:block"
+      />
+      <Image
+        src="/assets/LeonardAI/Flux_Dev_1.png"
+        alt="Flux Dev"
+        width={230}
+        height={200}
+        className="object-contain absolute top-0 right-0 hidden md:block"
+      />
+
+      <h1 className="dark:border-b-orange-tertiary md:text-4xl text-2xl title font-sans relative z-[1]">
         {t('title')}
       </h1>
 
       {/* Blur Bottom-Left Full */}
-      <div className="absolute bottom-[-4rem] left-0 z-[-1] pointer-events-none w-full hidden dark:block">
+      <div className="absolute bottom-[-4rem] left-0 z-[-1] pointer-events-none w-full hidden md:block dark:block">
         <img
           src="/assets/blur.png"
           alt="blur"
@@ -29,12 +42,12 @@ export const MyServices = () => {
         />
       </div>
 
-      <div className="mt-18 grid grid-rows-3 grid-cols-3 relative">
+      <div className="mt-18 flex flex-col md:grid md:grid-rows-3 md:grid-cols-3 gap-6 relative">
         <div className="col-start-1 row-start-1 relative">
           <CardService title={cardInfo[0].title} message={cardInfo[0].description} />
 
           {/* Seta para a direita */}
-          <div className="absolute top-[40%] right-[-222px] flex items-center w-56 h-0.5">
+          <div className="hidden md:flex absolute top-[40%] right-[-222px] items-center w-56 h-0.5">
 
             {/* Bolinha */}
             <div className="w-2 h-2 rounded-full dark:bg-orange-tertiary bg-black" />
@@ -57,7 +70,7 @@ export const MyServices = () => {
           <CardService title={cardInfo[1].title} message={cardInfo[1].description} />
 
           {/* Seta para a direita */}
-          <div className="absolute top-[40%] right-[-222px] flex items-center w-56 h-0.5">
+          <div className="hidden md:flex absolute top-[40%] right-[-222px] items-center w-56 h-0.5">
             {/* Bolinha */}
             <div className="w-2 h-2 rounded-full dark:bg-orange-tertiary bg-black" />
 
@@ -79,7 +92,7 @@ export const MyServices = () => {
           <CardService title={cardInfo[2].title} message={cardInfo[2].description} />
 
           {/* Seta para a esquerda */}
-          <div className="absolute top-[40%] left-[-670px] flex items-center w-2xl h-0.5">
+          <div className="hidden md:flex absolute top-[40%] left-[-670px] items-center w-2xl h-0.5">
             {/* Ícone */}
             <div className="p-3 rounded-full dark:bg-orange-tertiary bg-black flex items-center justify-center">
               {/* Aqui vai o ícone, exemplo: FaCode */}

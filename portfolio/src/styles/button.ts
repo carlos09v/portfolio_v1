@@ -11,12 +11,13 @@ export const button = tv({
         bg-purple-secundary
       `,
       content: `
-        rounded-lg px-6 py-2.5 
+        rounded-lg md:px-6 px-4 py-2.5
         font-code uppercase
         bg-purple-600
         text-gray-50
         border-1
         border-black
+        md:text-base text-sm
         dark:border-gray-50
       `,
       ghost: `
@@ -26,8 +27,9 @@ export const button = tv({
         px-8 py-1
         dark:border-purple-secundary
         border-2
-        border-gray-600
+        border-orange-600
         dark:text-gray-50
+        md:text-base text-sm
         text-black
       `
     },

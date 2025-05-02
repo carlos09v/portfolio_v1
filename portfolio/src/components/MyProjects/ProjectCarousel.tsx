@@ -32,7 +32,12 @@ export const ProjectCarousel = () => {
   })
 
   return (
-    <div className="relative">
+    <div className="relative md:mr-20 mx-2">
+      {/* Linha Vertical Esquerda */}
+      <div className="absolute top-[22%] bottom-0 left-0 w-1 dark:bg-green-primary bg-orange-tertiary opacity-80 blur-sm h-68" />
+      {/* Linha Vertical Direita */}
+      <div className="absolute top-[22%] bottom-0 right-0 w-1 dark:bg-green-primary bg-orange-tertiary opacity-80 blur-sm h-68" />
+      
       {/* Setas */}
       <button
         onClick={() => slider.current?.prev()}

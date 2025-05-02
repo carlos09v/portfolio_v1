@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
 
       {/* Conteúdo principal */}
-      <main className="flex-1 mx-[7.5rem] bg-green-300/50 dark:bg-black/50 border-x-2 border-orange-tertiary dark:border-purple-secundary">
+      <main className="flex-1 md:mx-[7.5rem] mx-10 bg-gray-50/30 dark:bg-black/50 border-x-2 border-orange-tertiary dark:border-purple-secundary">
         <MainContent />
         <MyServices />
         <MyProjects />
@@ -26,7 +26,7 @@ export default function Home() {
       </main>
 
       {/* Footer fora do main */}
-      <footer className="h-14 dark:bg-green-900 bg-orange-tertiary w-full flex items-center justify-end dark:border-t-orange-tertiary border-t-purple-secundary border-t text-gray-50">
+      <footer className="py-2 sm:py-4 dark:bg-green-900 bg-purple-secundary w-full flex items-center justify-end dark:border-t-orange-tertiary border-t-green-primary border-t text-gray-50 px-4 sm:px-12">
         <span className="font-sans uppercase text-sm mr-12">{t('footer')}</span>
       </footer>
     </div>

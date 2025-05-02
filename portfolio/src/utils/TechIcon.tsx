@@ -1,4 +1,3 @@
-import { Tooltip } from 'react-tooltip'
 
 interface TechIconProps {
   src: string
@@ -14,7 +13,7 @@ export const TechIcon = ({ src, alt, size = 56 }: TechIconProps) => {
         alt={alt}
         width={size}
         height={size}
-        className="w-14 h-12 transition-transform duration-300 hover:scale-110"
+        className="md:w-12 w-8 md:h-12 h-8 transition-transform duration-300 hover:scale-110"
         draggable={false}
         title={alt} // nativo ou usa uma lib
       />

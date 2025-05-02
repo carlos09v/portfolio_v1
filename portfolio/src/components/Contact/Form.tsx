@@ -45,20 +45,20 @@ export const Form = ({ email_placeholder, name_placeholder, textarea_placeholder
   };
 
   return (
-    <form ref={formRef} onSubmit={sendEmail} className="flex gap-4 mt-2">
-      <div className="flex gap-4 items-center rounded-lg w-[50%] p-2 bg-purple-900/60 dark:bg-orange-900/60">
+    <form ref={formRef} onSubmit={sendEmail} className="flex flex-col md:flex-row gap-4 mt-2">
+      <div className="flex gap-4 items-center rounded-lg md:w-[50%] p-2 bg-orange-900/60">
         <FiMessageCircle className="text-3xl" />
         <textarea
           placeholder={textarea_placeholder}
-          className="w-full h-full resize-none outline-none placeholder:text-center placeholder:pt-12"
+          className="w-full min-h-[120px] resize-none outline-none placeholder:text-center placeholder:pt-12"
           name="message"
           required
         />
       </div>
 
 
-      <div className="flex flex-col gap-2 w-[40%]">
-        <div className="rounded-lg flex items-center gap-2 p-2 bg-purple-900/60 dark:bg-orange-900/60">
+      <div className="flex flex-col gap-2 md:w-[40%]">
+        <div className="rounded-lg flex items-center gap-2 p-2 bg-orange-900/60 ">
           <MdPersonOutline className="text-3xl" />
           <input
             className="w-full outline-none"
@@ -69,7 +69,7 @@ export const Form = ({ email_placeholder, name_placeholder, textarea_placeholder
           />
         </div>
 
-        <div className="rounded-lg flex items-center gap-2 p-2 bg-purple-900/60 dark:bg-orange-900/60">
+        <div className="rounded-lg flex items-center gap-2 p-2 bg-orange-900/60">
           <AiOutlineMail className="text-3xl" />
           <input
             className="w-full outline-none"

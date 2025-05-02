@@ -19,7 +19,7 @@ export const CardProject = ({ name, link, deployLink, technologies, labelButton,
 
 
   return (
-    <div className="mt-18 w-80 rounded-2xl overflow-hidden relative">
+    <div className="mt-18 md:w-80 w-72 rounded-2xl overflow-hidden relative">
       <Image
         alt={name}
         src={link}
