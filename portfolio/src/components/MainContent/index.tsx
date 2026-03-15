@@ -12,7 +12,7 @@ export const MainContent = () => {
 
   return (
     <div id="home" className="scroll-mt-32 w-full mt-28">
-    <div className="w-full px-4 sm:px-16 xl:px-32 flex flex-col gap-8 ">
+    <div className="w-full px-4 md:px-16  flex flex-col gap-8 ">
       {/* Botões do topo */}
       <div className="flex flex-wrap justify-between gap-4">
         <Button variant="content">{t('dev_button')}</Button>
@@ -22,12 +22,12 @@ export const MainContent = () => {
       </div>
   
       {/* Conteúdo principal (Texto + Imagem) */}
-      <div className="flex flex-col md:flex-row justify-between items-center gap-8 w-full">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-8">
         {/* Texto */}
         <div className="font-sans flex flex-col justify-between md:gap-24 gap-8 md:w-[35%] w-[90%]">
-          <div className="flex flex-col gap-2">
-            <h1 className="md:text-4xl text-lg font-bold dark:[text-shadow:1px_0px_4px_#E68F0E]">{'> ' + t('title')}</h1>
-            <h2 className="ml-4 md:text-base text-sm">{t('message')}</h2>
+          <div className="flex flex-col gap-3">
+            <h1 className="md:text-4xl text-lg font-bold ">{'> ' + t('title')}</h1>
+            <p className="md:text-base text-sm indent-2">{t('message')}</p>
           </div>
   
           <div className="flex md:gap-12 gap-4 md:mx-0 mx-auto">
@@ -49,7 +49,7 @@ export const MainContent = () => {
     </div>
   
     {/* Barra de Tecnologias */}
-    <div className="dark:bg-[image:var(--gradient-purple)] bg-[image:var(--gradient-orange)] w-full h-[76px] gradient-orange-border border-y-purple-secundary border-1 flex items-center justify-center gap-8 text-gray-100 font-code font-semibold select-none overflow-x-auto whitespace-nowrap px-4">
+    <div className="dark:bg-[image:var(--gradient-purple)] bg-[image:var(--gradient-orange)] w-full h-[76px] gradient-orange-border border-y-purple-secundary border-1 flex items-center justify-center gap-8 dark:text-gray-100 text-gray-50 font-code font-semibold select-none overflow-x-auto whitespace-nowrap px-4">
       <span>React</span>
       <span>NextJS</span>
       <span>TypeScript</span>

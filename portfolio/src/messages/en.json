@@ -22,15 +22,15 @@
     "card_info": [
       {
         "title": "Website Development",
-        "description": "💬 Development of modern web applications focused on performance, security, and scalability."
+        "description": "💬 I build fast, secure, and scalable web applications — delivering professional websites that engage users and help your business grow."
       },
       {
         "title": "Web Design",
-        "description": "💬 I design user-friendly interfaces with Figma, focusing on UI/UX, accessibility, and responsiveness."
+        "description": "💬 I design intuitive and accessible interfaces with Figma — crafting experiences that look great on any device and keep users coming back."
       },
       {
         "title": "DevOps & Deploy",
-        "description": "💬 I handle CI/CD, automated builds, and deploys using Vercel, Netlify, and Docker with version control best practices."
+        "description": "💬 I automate your deployments with CI/CD pipelines — ensuring your site stays online, updated, and secure with zero hassle."
       }
     ]
   },

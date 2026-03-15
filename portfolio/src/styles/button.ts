@@ -27,7 +27,7 @@ export const button = tv({
         px-8 py-1
         dark:border-purple-secundary
         border-2
-        border-orange-600
+        border-green-900
         dark:text-gray-50
         md:text-base text-sm
         text-black

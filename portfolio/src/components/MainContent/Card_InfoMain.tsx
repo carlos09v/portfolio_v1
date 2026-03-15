@@ -20,7 +20,7 @@ export const Card_InfoMain = ({ icon: Icon, text, value, iconSize }: CardInfoPro
         <Icon className={iconClassName}/>
       </div>
 
-      <p className="dark:text-gray-100 text-gray-900 font-semibold md:text-base text-sm">
+      <p className="dark:text-gray-100 text-gray-900 font-semibold md:text-base text-xs">
         {text.split('\n').map((line, i) => (
           <React.Fragment key={i}>
             {line}

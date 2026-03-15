@@ -15,12 +15,13 @@
   <img alt="Licença de código (MIT)" src="https://img.shields.io/github/license/carlos09v/portfolio_v1?color=8a2be2"/>
 </p>
 
----
 
 ## 🌐 Idiomas | Languages
 
 - 🇧🇷 Este é o `README.md` em **Português**
 - 🇺🇸 [Click here for the English version](./README.en.md)
+
+---
 
 
 <div align='center'>

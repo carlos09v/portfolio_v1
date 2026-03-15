@@ -10,12 +10,12 @@ export const AboutMe = () => {
   return (
     <div id='about' className="scroll-mt-64 mt-20
     flex flex-col md:flex-row md:justify-between items-center  gap-8 w-[90%] md:w-[75%] mx-auto">
-      <img src="/assets/aboutme/eu.png" alt="Eu" className='w-40 h-40 md:w-fit md:h-fit object-cover ' />
+      <img src="/assets/aboutme/eu.png" alt="Eu" className='w-fit h-fit object-cover ' />
 
 
       <div className="w-full md:w-[70%] font-sans flex flex-col gap-4">
         <h1 className="dark:border-b-orange-tertiary title md:text-3xl text-lg">{t('title')}</h1>
-        <p className="mt-4 text-justify ">
+        <p className="mt-4 text-justify indent-6">
           {(t('message') as string).split('\n').map((line, i) => (
             <Fragment key={i}>
               {line}

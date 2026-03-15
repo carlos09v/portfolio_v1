@@ -22,15 +22,15 @@
     "card_info": [
       {
         "title": "Desenvolvimento Web",
-        "description": "💬 Desenvolvimento de aplicações web modernas com foco em performance, segurança e escalabilidade."
+        "description": "💬 Crio aplicações web rápidas, seguras e escaláveis — entregando sites profissionais que engajam usuários e impulsionam o seu negócio."
       },
       {
         "title": "Design Web",
-        "description": "💬 Crio interfaces amigáveis no Figma, com foco em UI/UX, acessibilidade e responsividade."
+        "description": "💬 Desenho interfaces intuitivas e acessíveis no Figma — criando experiências que se adaptam a qualquer dispositivo e fidelizam seus usuários."
       },
       {
         "title": "DevOps & Deploy",
-        "description": "💬 Gerencio CI/CD, builds automatizados e deploys utilizando Vercel, Netlify e Docker, seguindo as melhores práticas de controle de versão."
+        "description": "💬 Automatizo seus deploys com pipelines CI/CD — garantindo que seu site fique sempre no ar, atualizado e seguro, sem dores de cabeça."
       }
     ]
   },
